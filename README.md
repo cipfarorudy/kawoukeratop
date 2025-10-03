@@ -2,7 +2,9 @@
 
 Plateforme web dédiée à la promotion de la culture guadeloupéenne - architecture monorepo moderne.
 
-**🔄 Redéploiement:** 03/10/2025 - Mise à jour infrastructure Azure et domaine personnalisé
+**🔄 Redéploiement:** 03/10/2025 - Déployé sur kawoukeratop repository avec Azure infrastructure
+
+**🚀 Repository actuel:** <https://github.com/cipfarorudy/kawoukeratop>
 
 ## 🏗️ Structure du projet
 
@@ -62,9 +64,9 @@ npm run dev
 
 ## 📱 URLs du développement
 
-- **Frontend (React)** : http://localhost:5173 (ou port suivant)
-- **API Backend** : http://localhost:4000
-- **API Health Check** : http://localhost:4000/api/health
+- **Frontend (React)** : <http://localhost:5173> (ou port suivant)
+- **API Backend** : <http://localhost:4000>
+- **API Health Check** : <http://localhost:4000/api/health>
 
 ## 🛠️ Scripts disponibles
 
@@ -99,6 +101,7 @@ npm run dev
 ## 🔧 Technologies utilisées
 
 ### Frontend (apps/web/)
+
 - **React 19** - Framework frontend moderne
 - **Vite** - Build tool ultra-rapide
 - **Tailwind CSS** - Framework CSS utility-first
@@ -106,6 +109,7 @@ npm run dev
 - **ESLint** - Linting du code
 
 ### Backend (apps/api/)
+
 - **Express.js** - Framework web Node.js
 - **Nodemailer** - Envoi d'emails
 - **Zod** - Validation et parsing de schémas
@@ -117,6 +121,7 @@ npm run dev
 ## 🔒 Sécurité
 
 ### Protection backend
+
 - **Helmet.js** : Sécurisation des headers HTTP
 - **Rate Limiting** : Max 5 emails / IP / 15 minutes
 - **Validation Zod** : Validation stricte des données d'entrée
@@ -124,6 +129,7 @@ npm run dev
 - **Variables d'environnement** : Gestion sécurisée des secrets
 
 ### Validation des données
+
 - **Nom** : 2-50 caractères, lettres et espaces uniquement
 - **Email** : Format email valide, max 100 caractères  
 - **Message** : 10-1000 caractères, filtrage HTML
@@ -139,6 +145,7 @@ npm run dev
    - Sélectionner "Messagerie" et copier le mot de passe généré
 
 3. **Configurer le .env** :
+
 ```env
 MAIL_USER=votre.email@gmail.com
 MAIL_PASS=mot_de_passe_application_généré
@@ -159,15 +166,18 @@ secure: false,
 ## 🚀 Déploiement
 
 ### Frontend
+
 - **Vercel** / **Netlify** : Déploiement automatique depuis Git
 - **Build** : `npm run build` génère le dossier `dist/`
 
 ### Backend  
+
 - **Railway** / **Render** / **Heroku** : Plateformes PaaS
 - **VPS** : Avec PM2 pour la gestion des processus
 - **Docker** : Containerisation possible
 
 ### Variables d'environnement production
+
 ```env
 NODE_ENV=production
 MAIL_USER=email@production.com
@@ -179,12 +189,14 @@ PORT=4000
 ## 🐛 Debug & Logs
 
 ### Logs API
+
 - ✅ **Succès** : Emails envoyés avec détails
 - ❌ **Erreurs** : Validation, SMTP, serveur
 - 📊 **Rate limiting** : Tentatives bloquées
 - 🔒 **Sécurité** : Requêtes suspectes
 
 ### Health Check
+
 ```bash
 curl http://localhost:4000/api/health
 ```

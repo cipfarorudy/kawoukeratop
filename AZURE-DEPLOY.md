@@ -2,6 +2,8 @@
 
 Guide complet pour déployer la plateforme culturelle Kawoukeravore sur **Microsoft Azure**.
 
+**🔄 Dernière mise à jour:** $(Get-Date -Format "dd/MM/yyyy HH:mm") - Redéploiement initié
+
 ## ⚡ Déploiement Express Azure
 
 ### Option 1: GitHub Actions (Recommandé)

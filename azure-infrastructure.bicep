@@ -183,7 +183,7 @@ resource blobContainer 'Microsoft.Storage/storageAccounts/blobServices/container
 }
 
 // Log Analytics Workspace
-resource logAnalytics 'Microsoft.OperationalInsights/workspaces@2023-03-15-preview' = {
+resource logAnalytics 'Microsoft.OperationalInsights/workspaces@2023-09-01' = {
   name: logAnalyticsName
   location: location
   properties: {

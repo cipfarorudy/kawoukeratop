@@ -76,7 +76,9 @@ const validateGraphConfig = () => {
     "GRAPH_SENDER",
     "MAIL_TO",
   ];
-  const missing = requiredVars.filter((v) => !process.env[v]);
+  const missing = requiredVars.filter(
+    (v) => !process.env[v] || process.env[v].trim() === ""
+  );
   if (missing.length > 0) {
     console.warn(
       `⚠️ Variables d'environnement manquantes pour Microsoft Graph: ${missing.join(
@@ -370,20 +372,23 @@ app.use((err, req, res, next) => {
 const PORT = process.env.PORT || 4000;
 const server = app.listen(PORT, async () => {
   console.log(`🚀 API Kawoukeravore démarrée sur http://localhost:${PORT}`);
+  console.log(`🌍 Environment: ${process.env.NODE_ENV || "development"}`);
   console.log(
-    `📧 Microsoft Graph configuré: ${
-      process.env.GRAPH_SENDER || "❌ Non configuré"
+    `📧 Microsoft Graph: ${
+      validateGraphConfig() ? "✅ Configuré" : "⚠️ Non configuré (mode dev)"
     }`
   );
   console.log(
     `📬 Destination: ${process.env.MAIL_TO || "contact@kawoukeravore.top"}`
   );
-  console.log(
-    `🏢 Tenant: ${
-      process.env.AZURE_TENANT_ID ? "✅ Configuré" : "❌ Non configuré"
-    }`
-  );
   console.log(`⏰ ${new Date().toLocaleString("fr-FR")}`);
+
+  // En mode développement, afficher un message informatif
+  if (!validateGraphConfig()) {
+    console.log("💡 Pour configurer Microsoft Graph:");
+    console.log("   - AZURE_TENANT_ID, AZURE_CLIENT_ID, AZURE_CLIENT_SECRET");
+    console.log("   - GRAPH_SENDER (email expéditeur)");
+  }
 
   // Test de connexion Microsoft Graph (optionnel)
   if (validateGraphConfig()) {

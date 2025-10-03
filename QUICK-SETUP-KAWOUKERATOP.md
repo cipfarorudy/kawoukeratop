@@ -31,7 +31,7 @@ Token pour déployer vers Azure Static Web Apps
 Le workflow se déclenchera automatiquement et déploiera :
 
 1. **Infrastructure Azure** (Bicep)
-2. **API Backend** → https://kawoukeravore-api-prod.azurewebsites.net
+2. **API Backend** → https://kawoukeraotop-erh8hzcxhwawhtb7.westus3-01.azurewebsites.net
 3. **Frontend React** → https://kawoukeravore-frontend-prod.azurestaticapps.net
 4. **Tests automatiques**
 
@@ -43,7 +43,7 @@ Le workflow se déclenchera automatiquement et déploiera :
 ## 🌐 URLs finales attendues
 
 - Frontend : https://kawoukeravore-frontend-prod.azurestaticapps.net
-- API : https://kawoukeravore-api-prod.azurewebsites.net/api/health
+- API : https://kawoukeraotop-erh8hzcxhwawhtb7.westus3-01.azurewebsites.net/api/health
 - Domaine : https://kawoukeravore.top (après configuration DNS)
 
 ---

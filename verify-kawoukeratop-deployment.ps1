@@ -4,7 +4,7 @@ Write-Host "Verification du deploiement kawoukeratop" -ForegroundColor Cyan
 
 # URLs a tester
 $frontendUrl = "https://kawoukeravore-frontend-prod.azurestaticapps.net"
-$apiUrl = "https://kawoukeravore-api-prod.azurewebsites.net"
+$apiUrl = "https://kawoukeraotop-erh8hzcxhwawhtb7.westus3-01.azurewebsites.net"
 $healthUrl = "$apiUrl/api/health"
 
 Write-Host "`n📱 Test du Frontend..." -ForegroundColor Yellow

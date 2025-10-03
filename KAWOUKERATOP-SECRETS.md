@@ -73,7 +73,7 @@ az staticwebapp secrets list --name kawoukeravore-frontend-prod --resource-group
 ## URLs de déploiement
 
 - **Frontend**: https://kawoukeravore-frontend-prod.azurestaticapps.net
-- **API**: https://kawoukeravore-api-prod.azurewebsites.net  
+- **API**: https://kawoukeraotop-erh8hzcxhwawhtb7.westus3-01.azurewebsites.net  
 - **Domaine personnalisé**: https://kawoukeravore.top
 
 ## Vérification du déploiement

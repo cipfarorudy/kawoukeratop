@@ -3,9 +3,9 @@ import Galerie from "../components/Galerie";
 
 export default function Home() {
   return (
-    <div>
+    <div className="w-full">
       {/* Hero Section avec gradient et animation */}
-      <section className="relative bg-gradient-to-br from-green-600 via-green-700 to-blue-600 text-white py-24 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-green-600 via-green-700 to-blue-600 text-white py-24 overflow-hidden w-full">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-40 h-40 bg-white rounded-full -translate-x-20 -translate-y-20 animate-pulse"></div>
@@ -13,7 +13,7 @@ export default function Home() {
           <div className="absolute top-1/2 left-1/4 w-20 h-20 bg-white rounded-full animate-bounce delay-500"></div>
         </div>
         
-        <div className="relative max-w-6xl mx-auto px-4 text-center">
+        <div className="relative w-full max-w-6xl mx-auto px-4 text-center flex flex-col items-center justify-center">
           <div className="animate-fade-in-up">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-yellow-200 to-orange-200 bg-clip-text text-transparent">
               Kawoukeravore
@@ -41,8 +41,8 @@ export default function Home() {
       </section>
 
       {/* Section Features */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4">
+      <section className="py-16 bg-gray-50 w-full flex justify-center">
+        <div className="w-full max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
               🌺 La Guadeloupe authentique
@@ -75,8 +75,8 @@ export default function Home() {
       </section>
 
       {/* Section Newsletter */}
-      <section className="py-12 bg-green-700 text-white">
-        <div className="max-w-4xl mx-auto px-4 text-center">
+      <section className="py-12 bg-green-700 text-white w-full flex justify-center">
+        <div className="w-full max-w-4xl mx-auto px-4 text-center">
           <h3 className="text-2xl md:text-3xl font-bold mb-4">
             📧 Restez connecté à la Guadeloupe
           </h3>

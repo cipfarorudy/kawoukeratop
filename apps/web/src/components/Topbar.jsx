@@ -1,7 +1,7 @@
 export default function Topbar() {
   return (
-    <div className="bg-green-900 text-white text-xs md:text-sm relative z-50">
-      <div className="max-w-6xl mx-auto px-4 py-2 flex items-center justify-between gap-2">
+    <div className="bg-green-900 text-white text-xs md:text-sm relative z-50 w-full flex justify-center">
+      <div className="w-full max-w-6xl mx-auto px-4 py-2 flex items-center justify-between gap-2">
         {/* Gauche : coordonnées avec animations */}
         <div className="flex flex-wrap items-center gap-2 md:gap-4">
           <a

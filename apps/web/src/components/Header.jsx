@@ -28,12 +28,12 @@ export default function Header() {
   ];
 
   return (
-    <header className={`fixed top-10 left-0 right-0 z-40 transition-all duration-300 ${
+    <header className={`fixed top-10 left-0 right-0 z-40 transition-all duration-300 flex justify-center ${
       scrolled 
         ? 'bg-green-700/95 backdrop-blur-md shadow-lg' 
         : 'bg-green-700 shadow-md'
     }`}>
-      <div className="max-w-6xl mx-auto flex justify-between items-center px-4 py-4">
+      <div className="w-full max-w-6xl mx-auto flex justify-between items-center px-4 py-4">
         {/* Logo avec animation */}
         <Link to="/" className="group">
           <div className="flex items-center space-x-2">

@@ -373,7 +373,7 @@ const server = app.listen(PORT, async () => {
     }`
   );
   console.log(
-    `📬 Destination: ${process.env.MAIL_TO || "contact@kawoukeravore.com"}`
+    `📬 Destination: ${process.env.MAIL_TO || "contact@kawoukeravore.top"}`
   );
   console.log(
     `🏢 Tenant: ${

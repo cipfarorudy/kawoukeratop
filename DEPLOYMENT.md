@@ -1,4 +1,4 @@
-# 🚀 Guide de déploiement Kawoukeravore
+﻿# 🚀 Guide de déploiement Kawoukeravore
 
 Guide complet pour déployer votre plateforme culturelle guadeloupéenne sur un serveur Ubuntu/Debian.
 
@@ -8,7 +8,7 @@ Guide complet pour déployer votre plateforme culturelle guadeloupéenne sur un 
 - **OS** : Ubuntu 20.04+ ou Debian 11+
 - **RAM** : Minimum 1 GB (recommandé 2 GB)
 - **Stockage** : 10 GB libres
-- **Domaine** : `kawoukeravore.site` pointant vers votre serveur
+- **Domaine** : `kawoukeravore.top` pointant vers votre serveur
 
 ### Logiciels à installer
 ```bash
@@ -83,20 +83,20 @@ PORT=4000
 # Configuration Email Gmail
 MAIL_USER=votre.email@gmail.com
 MAIL_PASS=votre_mot_de_passe_application
-MAIL_TO=contact@kawoukeravore.site
+MAIL_TO=contact@kawoukeravore.top
 
 # Sécurité
-CORS_ORIGIN=https://kawoukeravore.site,https://www.kawoukeravore.site
+CORS_ORIGIN=https://kawoukeravore.top,https://www.kawoukeravore.top
 ```
 
 ### Étape 3 : Configuration Nginx
 
 ```bash
 # Copie de la configuration
-sudo cp /var/www/kawoukeravore/nginx.conf /etc/nginx/sites-available/kawoukeravore.site
+sudo cp /var/www/kawoukeravore/nginx.conf /etc/nginx/sites-available/kawoukeravore.top
 
 # Activation du site
-sudo ln -s /etc/nginx/sites-available/kawoukeravore.site /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/kawoukeravore.top /etc/nginx/sites-enabled/
 
 # Test de la configuration
 sudo nginx -t
@@ -125,7 +125,7 @@ sudo env PATH=$PATH:/usr/bin /usr/lib/node_modules/pm2/bin/pm2 startup systemd -
 
 ```bash
 # Génération du certificat SSL
-sudo certbot --nginx -d kawoukeravore.site -d www.kawoukeravore.site
+sudo certbot --nginx -d kawoukeravore.top -d www.kawoukeravore.top
 
 # Configuration du renouvellement automatique
 sudo crontab -e
@@ -139,19 +139,19 @@ sudo crontab -e
 
 1. **Frontend** :
 ```bash
-curl -I https://kawoukeravore.site
+curl -I https://kawoukeravore.top
 # Doit retourner : HTTP/2 200
 ```
 
 2. **API Health Check** :
 ```bash
-curl https://kawoukeravore.site/api/health
+curl https://kawoukeravore.top/api/health
 # Doit retourner : {"status":"OK","message":"🚀 API Kawoukeravore opérationnelle"}
 ```
 
 3. **Test du formulaire de contact** :
 ```bash
-curl -X POST https://kawoukeravore.site/api/contact \
+curl -X POST https://kawoukeravore.top/api/contact \
   -H "Content-Type: application/json" \
   -d '{"name":"Test","email":"test@example.com","message":"Message de test déploiement"}'
 ```
@@ -198,7 +198,7 @@ sudo systemctl reload nginx
 ```bash
 # Sauvegarde de la configuration
 sudo tar -czf /backup/kawoukeravore-config-$(date +%Y%m%d).tar.gz \
-  /etc/nginx/sites-available/kawoukeravore.site \
+  /etc/nginx/sites-available/kawoukeravore.top \
   /var/www/kawoukeravore/.env \
   /var/www/kawoukeravore/ecosystem.config.json
 
@@ -303,7 +303,7 @@ pm2 logs kawoukeravore-api --err
 ### Support
 
 Pour obtenir de l'aide :
-- 📧 Email : support@kawoukeravore.site
+- 📧 Email : support@kawoukeravore.top
 - 📚 Documentation : https://github.com/votre-username/kawoukeravore
 - 🐛 Issues : https://github.com/votre-username/kawoukeravore/issues
 

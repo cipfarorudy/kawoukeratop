@@ -1,4 +1,4 @@
-# 🌴 Kawoukeravore - Monorepo
+﻿# 🌴 Kawoukeravore - Monorepo
 
 Plateforme web dédiée à la promotion de la culture guadeloupéenne - architecture monorepo moderne.
 
@@ -38,7 +38,7 @@ Créez le fichier `apps/api/.env` :
 # Configuration Email
 MAIL_USER=votre.email@gmail.com
 MAIL_PASS=votre_mot_de_passe_application
-MAIL_TO=contact@kawoukeravore.com
+MAIL_TO=contact@kawoukeravore.top
 
 # Port du serveur API
 PORT=4000
@@ -140,7 +140,7 @@ npm run dev
 ```env
 MAIL_USER=votre.email@gmail.com
 MAIL_PASS=mot_de_passe_application_généré
-MAIL_TO=destinataire@kawoukeravore.com
+MAIL_TO=destinataire@kawoukeravore.top
 ```
 
 ### Autres fournisseurs
@@ -170,7 +170,7 @@ secure: false,
 NODE_ENV=production
 MAIL_USER=email@production.com
 MAIL_PASS=password_securise
-MAIL_TO=contact@kawoukeravore.com  
+MAIL_TO=contact@kawoukeravore.top  
 PORT=4000
 ```
 

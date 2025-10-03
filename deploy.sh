@@ -7,7 +7,7 @@ echo "🚀 Déploiement Kawoukeravore..."
 
 # Variables
 PROJECT_NAME="kawoukeravore"
-DOMAIN="kawoukeravore.site"
+DOMAIN="kawoukeravore.top"
 NGINX_CONFIG="/etc/nginx/sites-available/$DOMAIN"
 NGINX_ENABLED="/etc/nginx/sites-enabled/$DOMAIN"
 WEB_ROOT="/var/www/$PROJECT_NAME"

@@ -2,6 +2,8 @@
 
 Plateforme web dédiée à la promotion de la culture guadeloupéenne - architecture monorepo moderne.
 
+**🔄 Redéploiement:** 03/10/2025 - Mise à jour infrastructure Azure et domaine personnalisé
+
 ## 🏗️ Structure du projet
 
 ```

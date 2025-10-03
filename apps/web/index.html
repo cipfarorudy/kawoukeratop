@@ -1,12 +1,143 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <!-- SEO Meta Tags -->
+    <title>
+      Kawoukeravore 🌴 | Culture & Patrimoine Guadeloupéen Authentique
+    </title>
+    <meta
+      name="description"
+      content="Découvrez la richesse culturelle de la Guadeloupe : artisanat créole, gastronomie traditionnelle, musique gwoka et patrimoine caribéen. Plateforme dédiée à la promotion de l'authenticité guadeloupéenne."
+    />
+    <meta
+      name="keywords"
+      content="Guadeloupe, culture créole, artisanat local, gastronomie antillaise, gwoka, patrimoine caribéen, kawoukeravore, Antilles françaises"
+    />
+    <meta name="author" content="Kawoukeravore" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Viewport & Mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>kawoukeravore</title>
+    <meta name="theme-color" content="#059669" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Kawoukeravore" />
+    <meta
+      property="og:title"
+      content="Kawoukeravore 🌴 | Culture & Patrimoine Guadeloupéen"
+    />
+    <meta
+      property="og:description"
+      content="Découvrez la richesse culturelle de la Guadeloupe : artisanat créole, gastronomie traditionnelle, musique gwoka et patrimoine caribéen authentique."
+    />
+    <meta property="og:url" content="https://kawoukeravore.top" />
+    <meta
+      property="og:image"
+      content="https://kawoukeravore.top/images/og-image.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="fr_GP" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@kawoukeravore" />
+    <meta
+      name="twitter:title"
+      content="Kawoukeravore 🌴 | Culture Guadeloupéenne Authentique"
+    />
+    <meta
+      name="twitter:description"
+      content="Découvrez la richesse culturelle de la Guadeloupe : artisanat créole, gastronomie traditionnelle et patrimoine caribéen."
+    />
+    <meta
+      name="twitter:image"
+      content="https://kawoukeravore.top/images/twitter-card.jpg"
+    />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://kawoukeravore.top" />
+
+    <!-- Favicons & Icons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/apple-touch-icon.png"
+    />
+    <link
+      rel="mask-icon"
+      href="/images/safari-pinned-tab.svg"
+      color="#059669"
+    />
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Geographic targeting -->
+    <meta name="geo.region" content="GP" />
+    <meta name="geo.placename" content="Guadeloupe" />
+    <meta name="geo.position" content="16.2650;-61.5510" />
+    <meta name="ICBM" content="16.2650, -61.5510" />
+
+    <!-- Structured Data for Local Business -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Kawoukeravore",
+        "description": "Plateforme dédiée à la promotion de la culture et du patrimoine guadeloupéen authentique",
+        "url": "https://kawoukeravore.top",
+        "logo": "https://kawoukeravore.top/images/logo.png",
+        "sameAs": ["https://wa.me/590690000000"],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+590690000000",
+          "contactType": "Customer Service",
+          "email": "contact@kawoukeravore.top",
+          "availableLanguage": ["French", "Créole"]
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "GP",
+          "addressRegion": "Guadeloupe"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "Guadeloupe"
+        }
+      }
+    </script>
   </head>
   <body>
+    <!-- Skip navigation for accessibility -->
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-green-600 text-white px-4 py-2 rounded-md z-50"
+    >
+      Passer au contenu principal
+    </a>
+
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

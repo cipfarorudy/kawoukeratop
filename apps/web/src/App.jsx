@@ -8,14 +8,17 @@ import Contact from "./pages/Contact";
 
 export default function App() {
   return (
-    <div className="flex flex-col min-h-screen">
-      {/* Bloc sticky combiné */}
-      <div className="sticky top-0 z-50">
+    <div className="min-h-screen bg-white">
+      {/* Topbar fixe */}
+      <div className="fixed top-0 left-0 right-0 z-40">
         <Topbar />
-        <Header />
       </div>
+      
+      {/* Header fixe avec offset pour la topbar */}
+      <Header />
 
-      <main className="flex-grow">
+      {/* Main content avec padding-top pour compenser le header fixe */}
+      <main className="min-h-screen">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

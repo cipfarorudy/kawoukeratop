@@ -34,7 +34,10 @@ app.use(
       "http://localhost:5174",
       "http://localhost:5175",
       "http://localhost:5176",
-    ], // URLs du frontend Vite
+      "https://black-island-0b83e3e03.1.azurestaticapps.net",
+      "https://kawoukeravore.top",
+      "https://www.kawoukeravore.top",
+    ], // URLs du frontend Vite et Azure
     credentials: true,
   })
 );

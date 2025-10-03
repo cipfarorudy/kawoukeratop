@@ -1,0 +1,52 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Variables d'environnement
+.env
+.env.local
+.env.production
+.env.development
+
+# WhatsApp Web Session Data
+apps/whatsapp-bot/.auth/
+
+# PM2 logs et données
+.pm2/
+
+# Build directories
+build/
+dist/
+
+# Media files stockés
+media/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Backup files
+*.bak
+*.backup
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini

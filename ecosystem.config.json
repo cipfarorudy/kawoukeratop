@@ -1,0 +1,26 @@
+{
+  "apps": [{
+    "name": "kawoukeravore-api",
+    "script": "apps/api/src/server.js",
+    "cwd": "/var/www/kawoukeravore",
+    "instances": 1,
+    "exec_mode": "fork",
+    "env": {
+      "NODE_ENV": "production",
+      "PORT": 4000
+    },
+    "env_production": {
+      "NODE_ENV": "production",
+      "PORT": 4000
+    },
+    "log_file": "/var/log/pm2/kawoukeravore-api.log",
+    "out_file": "/var/log/pm2/kawoukeravore-api-out.log",
+    "error_file": "/var/log/pm2/kawoukeravore-api-error.log",
+    "time": true,
+    "watch": false,
+    "ignore_watch": ["node_modules", "logs", "*.log"],
+    "restart_delay": 4000,
+    "max_restarts": 10,
+    "min_uptime": "10s"
+  }]
+}
